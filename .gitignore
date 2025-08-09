@@ -1,0 +1,110 @@
+# ===============================
+# 📦 Node.js Dependencies
+# ===============================
+node_modules/
+.env
+.env.local
+.env.*.local
+
+# ===============================
+# 📝 Logs & Temp
+# ===============================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.swn
+*.lock
+*.pid
+
+# ===============================
+# 💻 IDE & Editor
+# ===============================
+.vscode/
+.idea/
+*.orig
+
+# ===============================
+# 🖼 OS Specific (Windows + Mac)
+# ===============================
+.DS_Store
+Thumbs.db
+
+# Windows User Directories
+AppData/
+Desktop/
+Downloads/
+Documents/
+Favorites/
+Links/
+Music/
+Pictures/
+Videos/
+NTUSER.DAT*
+SendTo/
+Recent/
+PrintHood/
+NetHood/
+Start Menu/
+Templates/
+My Documents/
+Cookies/
+Local Settings/
+
+# ===============================
+# 👤 User-specific configs
+# ===============================
+.bash_history
+.gitconfig
+.gradle/
+.idlerc/
+.keras/
+.lesshst
+.ollama/
+.codeium/
+.bun/
+.yarnrc
+.git-for-windows-updater
+
+# ===============================
+# 💣 Leftover build/config files
+# ===============================
+_*
+build.gradle
+settings.gradle
+
+# ===============================
+# 🚫 Ignore unrelated projects
+# ===============================
+Health-Tracker1/
+Classwork1/
+Hack4bengal/
+Institute-administration1/
+NeuroShield-Hack4Bengal/
+SpeakME/
+Teacher-Interface/
+Wallet1/
+admin-2/
+dash/
+dash_backup/
+foundry-temp/
+fr/
+go/
+haha/
+mah-/
+monad-chain-game/
+morph-and-seek-arena/
+react/
+customer-web/
+testing/
+
+# ===============================
+# ✅ Only keep this project folder
+# ===============================
+!OneDrive/Desktop/url-shortener/**
