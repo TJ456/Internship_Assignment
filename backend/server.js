@@ -1,7 +1,9 @@
-const express = require('express');
-const cors = require('cors');
-const dotenv = require('dotenv');
-const connectDB = require('./config/db');
+import express from "express";
+import dotenv from "dotenv";
+import cors from "cors";
+import connectDB from "./config/db.js";
+import urlRoutes from "./routes/urlRoutes.js";
+import { errorHandler } from "./middleware/errorHandler.js";
 
 dotenv.config();
 connectDB();
@@ -10,8 +12,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('/', require('./routes/urlRoutes'));
+app.use("/", urlRoutes);
+app.use(errorHandler);
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server running on port ${process.env.PORT}`);
-});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
