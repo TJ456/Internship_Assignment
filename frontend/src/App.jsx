@@ -1,22 +1,23 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
+import { Rocket, Settings, Home, Crown } from "lucide-react";
 import HomePage from "./pages/HomePage";
 import AdminPage from "./pages/AdminPage";
 import ShortRedirect from "./pages/ShortRedirect";
 
-function NavLink({ to, children }) {
+function NavLink({ to, children, icon: Icon }) {
   const location = useLocation();
   const isActive = location.pathname === to;
   
   return (
     <Link
       to={to}
-      className={`px-4 py-2 rounded-lg transition-all duration-300 ${
-        isActive
-          ? "bg-white text-indigo-600 shadow-sm"
-          : "text-gray-600 hover:text-indigo-600 hover:bg-white/50"
-      }`}
+      className={`nav-link ${isActive ? 'active' : ''}`}
     >
-      {children}
+      <div className="flex items-center gap-2">
+        <Icon className="w-4 h-4" />
+        <span>{children}</span>
+      </div>
     </Link>
   );
 }
@@ -24,24 +25,36 @@ function NavLink({ to, children }) {
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-br from-violet-50 to-indigo-50">
-        <nav className="bg-white/30 backdrop-blur-sm border-b border-white/50 sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-16">
+      <div className="min-h-screen">
+        {/* Revolutionary Cosmic Navigation */}
+        <nav className="nav-glass">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex items-center justify-between h-full">
               <div className="flex-shrink-0">
-                <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600">
-                  URLShort
-                </span>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
+                    <Rocket className="w-6 h-6 text-white" />
+                  </div>
+                  <span className="text-2xl font-black holographic">
+                    Cosmic URL
+                  </span>
+                </div>
               </div>
-              <div className="flex gap-2">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/admin">Admin</NavLink>
+              
+              <div className="flex items-center gap-1">
+                <NavLink to="/" icon={Home}>
+                  Home
+                </NavLink>
+                <NavLink to="/admin" icon={Crown}>
+                  Dashboard
+                </NavLink>
               </div>
             </div>
           </div>
         </nav>
 
-        <main>
+        {/* Main Content with Cosmic Padding */}
+        <main className="pt-16">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/admin" element={<AdminPage />} />
