@@ -265,26 +265,6 @@ PORT=5000
 BASE_URL=http://localhost:3000
 ```
 
-## 🚀 Deployment
-
-### Backend Deployment
-1. Set production environment variables
-2. Install dependencies: `npm install --production`
-3. Start server: `npm start`
-
-### Frontend Deployment
-1. Build for production: `npm run build`
-2. Deploy `dist/` folder to your hosting provider
-3. Configure environment variables for API endpoints
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
 ## 📝 License
 
 This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
