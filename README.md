@@ -60,23 +60,7 @@ cd url-shortener
 ```bash
 cd backend
 npm install
-```
-
-Create a `.env` file in the backend directory:
-```env
-MONGO_URI=mongodb://localhost:27017/urlshortener
-# OR for MongoDB Atlas:
-# MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/urlshortener
-
-PORT=5000
-BASE_URL=http://localhost:3000
-```
-
-Start the backend server:
-```bash
 npm start
-# OR for development with auto-reload:
-npm run dev
 ```
 
 ### 3. Frontend Setup
@@ -87,8 +71,9 @@ npm run dev
 ```
 
 ### 4. Access the Application
-- **Frontend**: http://localhost:3000 (or 3001/3002 if port busy)
-- **Backend API**: http://localhost:5000
+- **Live Demo**: https://internship-assignment-tau-drab.vercel.app/
+- **Local Frontend**: http://localhost:3000 (or 3001/3002 if port busy)
+- **Local Backend API**: http://localhost:5001
 - **Admin Dashboard**: http://localhost:3000/admin
 
 ## 🎯 Unique Features & Implementation
@@ -257,13 +242,18 @@ npm run build    # Production build
 npm run preview  # Preview production build
 ```
 
-### Environment Variables
-Create `.env` in backend directory:
-```env
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
-BASE_URL=http://localhost:3000
-```
+## 🌐 Live Deployment
+
+### 🚀 Production URLs
+- **Frontend**: https://internship-assignment-tau-drab.vercel.app/
+- **Backend API**: https://internship-assignment-68hf.onrender.com
+- **Database**: MongoDB Atlas (Cloud)
+
+### 🏗️ Deployment Architecture
+- **Frontend**: Deployed on Vercel with automatic deployments from GitHub
+- **Backend**: Deployed on Render with health check monitoring
+- **Database**: MongoDB Atlas for global accessibility and persistence
+- **Environment Variables**: Securely managed through hosting platform dashboards
 
 ## 📝 License
 
