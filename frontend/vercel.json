@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://internship-assignment-68hf.onrender.com/api/$1"
+    },
+    {
+      "source": "/([A-Za-z0-9_-]{4,})",
+      "destination": "https://internship-assignment-68hf.onrender.com/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
