@@ -39,18 +39,16 @@ export default function HomePage() {
 
   return (
     <div className="container mx-auto px-6 py-20">
-      {/* Cosmic Hero Section */}
+      {/* Modern Hero Section */}
       <div className="text-center mb-16">
-        <div className="flex items-center justify-center mb-6">
-          <Sparkles className="w-12 h-12 text-purple-400 mr-4 animate-pulse" />
+        <div className="mb-8">
           <h1 className="holographic text-6xl font-black tracking-tight">
-            Cosmic URL
+            LinkForge
           </h1>
-          <Zap className="w-12 h-12 text-blue-400 ml-4 animate-pulse" />
         </div>
         <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-          Transform your long URLs into ✨ <span className="neon-text">cosmic shortcuts</span> ✨ 
-          with our revolutionary URL shortener powered by advanced technology
+          Transform your lengthy URLs into powerful, trackable links with our 
+          <span className="neon-text"> advanced shortening platform</span> built for professionals
         </p>
       </div>
 
@@ -64,7 +62,7 @@ export default function HomePage() {
                 type="url"
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
-                placeholder="✨ Paste your cosmic URL here to transform it..."
+                placeholder="Enter your URL to transform it instantly..."
                 className="input-field pl-12 text-lg"
                 required
               />
@@ -111,7 +109,7 @@ export default function HomePage() {
                 <CheckCircle className="w-6 h-6 mr-4 state-success" />
                 <div className="flex-1">
                   <h3 className="text-lg font-bold text-white mb-2">
-                    🎉 Your cosmic URL is ready!
+                    Success! Your shortened URL is ready
                   </h3>
                   <p className="font-mono text-white/90 bg-black/20 p-3 rounded-lg break-all">
                     {shortenedUrl}
@@ -139,14 +137,14 @@ export default function HomePage() {
         </div>
       )}
 
-      {/* Cosmic Features Section */}
+      {/* Advanced Features Section */}
       <div className="max-w-6xl mx-auto mt-20">
         <div className="text-center mb-12">
           <h2 className="holographic text-4xl font-bold mb-4">
-            Why Choose Cosmic URL?
+            Why Choose LinkForge?
           </h2>
           <p className="text-white/70 text-lg">
-            Experience the future of URL shortening with our revolutionary features
+            Experience professional URL management with cutting-edge technology
           </p>
         </div>
         
@@ -155,9 +153,9 @@ export default function HomePage() {
             <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
               <Rocket className="w-8 h-8 text-white" />
             </div>
-            <h3 className="neon-text text-xl font-bold mb-4">Lightning Fast</h3>
+            <h3 className="neon-text text-xl font-bold mb-4">Lightning Performance</h3>
             <p className="text-white/70">
-              Instant URL shortening with our optimized cosmic algorithms
+              Sub-millisecond response times with global CDN infrastructure
             </p>
           </div>
           
@@ -165,9 +163,9 @@ export default function HomePage() {
             <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
               <Shield className="w-8 h-8 text-white" />
             </div>
-            <h3 className="neon-text text-xl font-bold mb-4">100% Secure</h3>
+            <h3 className="neon-text text-xl font-bold mb-4">Enterprise Security</h3>
             <p className="text-white/70">
-              Your URLs are protected with enterprise-grade security
+              Military-grade encryption with comprehensive threat protection
             </p>
           </div>
           
@@ -175,9 +173,9 @@ export default function HomePage() {
             <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full flex items-center justify-center">
               <Globe className="w-8 h-8 text-white" />
             </div>
-            <h3 className="neon-text text-xl font-bold mb-4">Global Access</h3>
+            <h3 className="neon-text text-xl font-bold mb-4">Global Reach</h3>
             <p className="text-white/70">
-              Access your shortened URLs from anywhere in the cosmos
+              Worldwide availability with intelligent geographic routing
             </p>
           </div>
         </div>

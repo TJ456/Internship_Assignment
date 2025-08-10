@@ -47,18 +47,16 @@ export default function AdminPage() {
 
   return (
     <div className="container mx-auto px-6 py-20">
-      {/* Cosmic Admin Header */}
+      {/* Professional Admin Header */}
       <div className="text-center mb-16">
-        <div className="flex items-center justify-center mb-6">
-          <Database className="w-12 h-12 text-purple-400 mr-4 animate-pulse" />
+        <div className="mb-8">
           <h1 className="holographic text-6xl font-black tracking-tight">
-            Cosmic Dashboard
+            Analytics Hub
           </h1>
-          <BarChart3 className="w-12 h-12 text-blue-400 ml-4 animate-pulse" />
         </div>
         <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-          Monitor your ✨ <span className="neon-text">cosmic URL empire</span> ✨ 
-          with advanced analytics and real-time insights
+          Monitor your <span className="neon-text">link performance</span> with 
+          comprehensive analytics and real-time insights
         </p>
       </div>
 
@@ -125,8 +123,8 @@ export default function AdminPage() {
           {urls.length === 0 ? (
             <div className="text-center py-16">
               <Globe className="w-16 h-16 mx-auto mb-4 text-white/40" />
-              <h3 className="text-xl font-bold text-white/60 mb-2">No URLs Yet</h3>
-              <p className="text-white/40">Start creating some cosmic shortcuts!</p>
+              <h3 className="text-xl font-bold text-white/60 mb-2">No URLs Created Yet</h3>
+              <p className="text-white/40">Start creating shortened links to see analytics here</p>
             </div>
           ) : (
             <div className="overflow-x-auto">

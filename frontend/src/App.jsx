@@ -36,7 +36,7 @@ export default function App() {
                     <Rocket className="w-6 h-6 text-white" />
                   </div>
                   <span className="text-2xl font-black holographic">
-                    Cosmic URL
+                    LinkForge
                   </span>
                 </div>
               </div>
@@ -46,15 +46,15 @@ export default function App() {
                   Home
                 </NavLink>
                 <NavLink to="/admin" icon={Crown}>
-                  Dashboard
+                  Admin
                 </NavLink>
               </div>
             </div>
           </div>
         </nav>
 
-        {/* Main Content with Cosmic Padding */}
-        <main className="pt-16">
+        {/* Main Content with Proper Spacing */}
+        <main className="pt-20">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/admin" element={<AdminPage />} />
